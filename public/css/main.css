@@ -68,7 +68,7 @@
       border-radius: 10px;
       opacity: 0;
       padding-top:40px;
-      transition: 2s;
+      transition: 1500ms;
       p{
         font-size: 20px;
         text-align: center;
@@ -90,13 +90,18 @@
     }
     
   }
-  .audio{
-    width:100%;
-    height: 100px;
+ 
+  .script{
     position: absolute;
-    top:50%;
-    text-align: center ;
-    display: none;
+    top:30%;
+    font-size: 27px;
+    color:rgb(141, 6, 17);
+    width:100%;
+    font-family: var(--font-family);
+    text-align: center;
+    font-weight: 800;
+    transform: translateX(-30px) translateY(20px) rotate(-10deg);
+    z-index: 900;
   }
   .merry{
     width:100%;
@@ -109,17 +114,13 @@
     font-family: var(--font-family);
     text-align: center;
   }
-  .script{
-    position: absolute;
-    top:30%;
-    font-size: 27px;
-    color:rgb(141, 6, 17);
+  .audio{
     width:100%;
-    font-family: var(--font-family);
-    text-align: center;
-    font-weight: 800;
-    transform: translateX(-30px) translateY(20px) rotate(-10deg);
-    z-index: 900;
+    height: 100px;
+    position: absolute;
+    top:50%;
+    text-align: center ;
+    display: none;
   }
 }
 
