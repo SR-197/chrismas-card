@@ -85,7 +85,7 @@
     &:hover ~ .merry{
       display: none;
     }
-    &:hover ~ .this{
+    &:hover ~ .script{
       display: none;
     }
     
