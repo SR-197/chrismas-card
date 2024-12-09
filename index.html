@@ -13,7 +13,7 @@
       <h3 class="click-btn">click on box below</h3>
       <h1>🎊</h1>
     </div>
-    <div class="product">
+    <div class="product" id="product-card">
       <div class="words">
         <p>Ho ho ho!<br>
 
@@ -31,22 +31,16 @@
          <br> Merry Friendsmas and
           
           <br>Happy Holidays!
+
+          <br>Merry Christmas
         </p>
       </div>
-      <div class="audio">
-        <audio src="./public/audio/justin_bieber_mistletoe.mp3" controls autoplay></audio>
-      </div>
+      
+        <audio class="audio" id="playing-audio" src="./public/audio/justin_bieber_mistletoe.mp3" controls></audio>
+      
     </div>
-    <div class="script">
-      <p>
-        this season
-        <br> 
-        let's make it
-      </p>
-      </div>
-    <div class="merry">
-      <p>merry <br>christmas</p>
-    </div>
+    
+    
     
 
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
@@ -111,6 +105,20 @@
           }, 0);
         });
       });
+
+      const audio = document.getElementById('playing-audio');
+        const playButton = document.getElementById('product-card');
+
+        // Add a click event listener to the button
+        playButton.addEventListener('click', () => {
+            audio.play()
+                .then(() => {
+                    console.log('Audio is playing');
+                })
+                .catch(error => {
+                    console.error('Error playing audio:', error);
+                });
+        });
     </script>
   </body>
 </html>
